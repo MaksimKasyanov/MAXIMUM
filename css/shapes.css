@@ -1,0 +1,58 @@
+.waves {
+    width: 30%;
+    height: 85px;
+    overflow: hidden;
+    position: absolute;
+    top: 10%;
+    right: -17%;
+}
+.waves__img {
+    display: flex;
+    animation: scrollImages 5s linear infinite;
+}
+@keyframes scrollImages {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-85px);
+    }
+}
+
+.hero__abacus{
+    position: absolute;
+    right: -20%;
+    bottom: -10%;
+    width: 40%;
+}
+
+.hero__circle {
+    position: absolute;
+    bottom: -30px;
+    left: -30px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__circle-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    animation: rotate 8s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

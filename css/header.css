@@ -1,0 +1,121 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100vw;
+    background-color: #964E71;
+    height: 115px;
+}
+.header__wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15px;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+.header__logo{
+    padding-left: 35px;
+}
+.header__menu{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FAECDC;
+    padding: 15px;
+    top: calc(-100vh - 200px);
+    left: 0;
+    transition: all .5s;
+    z-index: 999;
+}
+.header__menu-opened{
+    top: 0;
+}
+.header__menu-close-img{
+    position: absolute;
+    top: 32px;
+    right: 15px;
+}
+.header__menu-wrapper{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: calc(100% - 30px);
+}
+.header__menu-inner{
+    border-bottom: 2px solid #91C6E8;
+    padding-bottom: 33px;
+    margin-bottom: 33px;
+}
+.header__menu-link{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__menu-btn-text{
+    display: block;
+}
+.header__mobile-enroll{
+    display: none !important;
+}
+
+
+@media (min-width: 1140px) {
+    .header__mobile-call{
+        display: none;
+    }
+    .header__logo{
+        padding-left: 0px;
+    }
+    .header__menu-wrapper{
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        width: 450px;
+    }
+    .header__menu{
+        position: static;
+        width: 450px;
+        height: auto;
+        background-color: rgba(250, 236, 220, 0);
+        padding: 15px;
+        top: calc(-100vh - 200px);
+        left: 0;
+        transition: all .5s;
+        z-index: 999;
+    }
+    .header__menu-inner{
+
+        border-bottom: none;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+    .header__menu-list{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .header__menu-link span{
+        color: #fff;
+        transition: all 0.3s;
+    }
+    .header__menu-link span:hover{
+        color: #FFBA69;
+    }
+    .header__burger{
+        display: none;
+    }
+    .header__menu-close-btn{
+        display: none;
+    }
+    .header .footer__menu-inner{
+        display: none;
+    }
+
+
+    .header__mobile-enroll{
+        display: block !important;
+    }
+}

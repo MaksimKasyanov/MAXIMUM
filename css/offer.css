@@ -1,0 +1,24 @@
+.offer{
+    padding: 0 15px;
+}
+.offer h2{
+    margin-bottom: 20px;
+}
+.offer__descr{
+    margin-bottom: 50px;
+}
+.offer__video{
+    border-radius: 20px;
+}
+
+@media (min-width: 1140px) {
+    .offer__wrapper{
+        width: 50% !important;
+    }
+    .offer__video{
+        width: 50%;
+    }
+    .offer{
+        display: flex;
+    }
+}

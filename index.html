@@ -1,0 +1,771 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MAXIMUM</title>
+    <link rel="icon" type="image/png" href="assets/tab-icon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Raleway:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/offer.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/dropdowns.css">
+    <link rel="stylesheet" href="css/shapes.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <button class="header__mobile-call">
+                <img class="header__mobile-call--img" src="assets/phone-header.svg" alt="Call trigger">
+            </button>
+            <a href="#" class="header__logo">
+                <img class="header__logo-img" src="assets/logo.svg" alt="Logotype">
+            </a>
+            <div class="header__menu">
+                <button class="header__menu-close-btn">
+                    <img class="header__menu-close-img" src="assets/close.svg" alt="Close menu button">
+                </button>
+                <div class="header__menu-wrapper">
+                    <div class="header__menu-inner">
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item">
+                                <a href="#about" class="header__menu-link">
+                                    <span class="header__menu-btn-text">Навчання</span>
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="#products" class="header__menu-link">
+                                    <span class="header__menu-btn-text">Продукти</span>
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="#feedback" class="header__menu-link">
+                                    <span class="header__menu-btn-text">Відгуки</span>
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="#contacts" class="header__menu-link">
+                                    <span class="header__menu-btn-text">Контакти</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu-inner">
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <img class="footer__menu-phone-img" src="assets/phone.svg" alt="Phone link image">
+                                <a class="footer__menu-link" href="tel:380505231731">+380505231731</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <img class="footer__menu-email-img" src="assets/email.svg" alt="Email link image">
+                                <a class="footer__menu-link footer__menu-email-link" href="mailto:educenmaximum@gmail.com">educenmaximum@gmail.com</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <span>Ми в соцмережах:</span>
+                            </li>
+                            <li class="footer__menu-item footer__menu-social">
+                                <a href="#" class="footer__menu-social-link">
+                                    <img class="footer__menu-social-img" src="assets/whatsapp.svg" alt="Whatsapp link image">
+                                </a>
+                                <a href="#" class="footer__menu-social-link">
+                                    <img class="footer__menu-social-img" src="assets/telegram.svg" alt="Telegram link image">
+                                </a>
+                                <a href="#" class="footer__menu-social-link">
+                                    <img class="footer__menu-social-img" src="assets/facebook.svg" alt="Facebook link image">
+                                </a>
+                                <a href="#" class="footer__menu-social-link">
+                                    <img class="footer__menu-social-img" src="assets/instagram.svg" alt="Instagram link image">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <button class="header__mobile-enroll">записатись</button>
+            <button class="header__burger">
+                <img class="header__burger-img" src="assets/burger.svg" alt="">
+            </button>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="hero__wrapper">
+                <h1 class="hero__title"><span>Освітній</span> центр</h1>
+                <p class="hero__text">Тут розумнішають</p>
+                <div class="hero__img-wrapper">
+                    <img class="hero__img" src="assets/hero-img.png" alt="Hero image">
+                    <div class="waves">
+                        <div class="waves__img">
+                            <img src="assets/wave.svg" alt="Image 1" class="image">
+                            <img src="assets/wave.svg" alt="Image 2" class="image">
+                        </div>
+                    </div>
+                    <img class="hero__abacus" src="assets/abacus.svg" alt="">
+                    <div class="hero__circle">
+                        <div class="hero__circle-img">
+                            <img src="assets/circle.svg" alt="Circle">
+                        </div>
+                    </div>
+                </div>
+                <h1 class="hero__name">"Максимум"</h1>
+            </div>
+
+            <button class="button-orange">записатись</button>
+        </section>
+        <section class="offer" data-aos="fade-up">
+            <div class="offer__wrapper">
+                <h2 class="title">Що ми пропонуємо?</h2>
+                <p class="offer__descr">
+                    Якісна підготовка до НМТ з математики. <br>
+                    Нічого зайвого, максимум зручності, щоб початковий рівень учня мав значення.
+                </p>
+            </div>
+            <video class="offer__video" controls width="100%" height="auto" data-aos="flip-left">
+                <source src="assets/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+        <section class="about" id="about" data-aos="fade-up">
+            <h2 class="title">Як ми навчаємо</h2>
+            <p class="about__item" data-aos="fade-up">Оптимізована програма підготовки</p>
+            <p class="about__item" data-aos="fade-down">Онлайн - заняття з викладачем</p>
+            <p class="about__item" data-aos="fade-up">ДЗ з перевіркою</p>
+            <p class="about__item" data-aos="fade-down">Велика кількість теоретичного матеріалу з доступом 24\7</p>
+            <p class="about__item" data-aos="fade-up">Відео усіх уроків</p>
+            <p class="about__item" data-aos="fade-down">Тренувальні тести</p>
+        </section>
+        <section class="products" id="products" data-aos="fade-up">
+            <h2 class="title">Наші продукти</h2>
+            <div class="products__item">
+                <h3 class="products__item-title">
+                    Курс "<span style="color: #F9A139">Максимум</span>"
+                </h3>
+                <ul class="products__list">
+                    <li class="products__list-item" data-aos="flip-left">
+                        Відео з теорією
+                    </li>
+                    <li class="products__list-item" data-aos="flip-right">
+                        Онлайн-заняття в малих групах
+                    </li>
+                    <li class="products__list-item" data-aos="flip-left">
+                        Шпаргалки з формулами
+                    </li>
+                    <li class="products__list-item" data-aos="flip-right">
+                        ДЗ з перевіркою та ключами
+                    </li>
+                    <li class="products__list-item" data-aos="flip-left">
+                        Консультації викладача
+                    </li>
+                    <li class="products__list-item" data-aos="flip-right">
+                        Доступ до усіх пройдених матеріалів 24\7
+                    </li>
+                    <li class="products__list-item" data-aos="flip-left">
+                        Вартість <span style="color: #F9A139; font-size: 32px; font-weight: bold;">200</span> грн\тиждень (можлива знижка до 20 %)
+                    </li>
+                </ul>
+                <button class="button-orange">дізнатись</button>
+            </div>
+            <div class="products__item">
+                <h3 class="products__item-title">
+                    Курс "<span style="color: #91C6E8">Мобільний</span>"
+                </h3>
+                <ul class="products__list">
+                    <li class="products__list-item" data-aos="flip-right">
+                        Відео з теорією
+                    </li>
+                    <li class="products__list-item" data-aos="flip-left">
+                        Онлайн-заняття в малих групах
+                    </li>
+                    <li class="products__list-item" data-aos="flip-right">
+                        Шпаргалки з формулами
+                    </li>
+                    <li class="products__list-item" data-aos="flip-left">
+                        ДЗ з перевіркою та ключами
+                    </li>
+                    <li class="products__list-item" data-aos="flip-right">
+                        Консультації викладача
+                    </li>
+                    <li class="products__list-item" data-aos="flip-left">
+                        Доступ до усіх пройдених матеріалів 24\7
+                    </li>
+                    <li class="products__list-item" data-aos="flip-right">
+                        Вартість <span style="color: #91C6E8; font-size: 32px; font-weight: bold;">100</span> грн\тиждень (можлива знижка до 20 %)
+                    </li>
+                </ul>
+                <button class="button-orange">дізнатись</button>
+            </div>
+            <div class="products__item">
+                <h3 class="products__item-title">
+                    <span style="color: #964E71">Індивідуальні</span> заняття
+                </h3>
+                <ul class="products__list">
+                    <li class="products__list-item" data-aos="flip-left">
+                        Відео з теорією
+                    </li>
+                    <li class="products__list-item" data-aos="flip-right">
+                        Онлайн-заняття в малих групах
+                    </li>
+                    <li class="products__list-item" data-aos="flip-left">
+                        Шпаргалки з формулами
+                    </li>
+                    <li class="products__list-item" data-aos="flip-right">
+                        ДЗ з перевіркою та ключами
+                    </li>
+                    <li class="products__list-item" data-aos="flip-left">
+                        Консультації викладача
+                    </li>
+                    <li class="products__list-item" data-aos="flip-right">
+                        Доступ до усіх пройдених матеріалів 24\7
+                    </li>
+                    <li class="products__list-item">
+                        Вартість <span style="color: #964E71; font-size: 32px; font-weight: bold;">400</span> грн\тиждень (можлива знижка до 20 %)
+                    </li>
+                </ul>
+                <button class="button-orange">дізнатись</button>
+            </div>
+        </section>
+        <section class="info" data-aos="fade-up">
+            <h2 class="title">Дізнатись більше</h2>
+            <form class="info__form">
+                <span class="info__form-descr">Ім’я</span>
+                <input class="footer__form-input" type="text" placeholder="Введіть ім’я">
+                <span class="info__form-descr">Номер телефону</span>
+                <input class="footer__form-input" type="tel" placeholder="+38 (ХХХ) ХХ ХХ ХХ">
+                <button class="button-orange">дізнатись</button>
+            </form>
+        </section>
+        <section class="feedback" id="feedback">
+            <div class="feedbackSwiper swiper">
+                <h2 class="title">Відгуки</h2>
+                <div class="feedbackSwiper-wrapper swiper-wrapper">
+                    <div class="feedbackSwiper-slide swiper-slide">
+                        <div class="feedbackSwiper-slide__inner">
+                            <div class="feedbackSwiper-slide__head">
+                                <p class="feedbackSwiper-slide__name">Юлия</p>
+                                <p class="feedbackSwiper-slide__date feedbackSwiper-slide__date">02.06.2023</p>
+                            </div>
+                            <ul class="feedbackSwiper-slide__stars">
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                            </ul>
+                            <p class="feedbackSwiper-slide__text">Кожен учитель трохи психолог. Це про нього. Можу сказати лише хороше. Дуже дякую за ваше терпіння.</p>
+                            <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
+                        </div>
+                    </div>
+                    <div class="feedbackSwiper-slide swiper-slide">
+                        <div class="feedbackSwiper-slide__inner">
+                            <div class="feedbackSwiper-slide__head">
+                                <p class="feedbackSwiper-slide__name">Юлия</p>
+                                <p class="feedbackSwiper-slide__date">02.06.2023</p>
+                            </div>
+                            <ul class="feedbackSwiper-slide__stars">
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                            </ul>
+                            <p class="feedbackSwiper-slide__text">Кожен учитель трохи психолог. Це про нього. Можу сказати лише хороше. Дуже дякую за ваше терпіння.</p>
+                            <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
+                        </div>
+                    </div>
+                    <div class="feedbackSwiper-slide swiper-slide">
+                        <div class="feedbackSwiper-slide__inner">
+                            <div class="feedbackSwiper-slide__head">
+                                <p class="feedbackSwiper-slide__name">Юлия</p>
+                                <p class="feedbackSwiper-slide__date">02.06.2023</p>
+                            </div>
+                            <ul class="feedbackSwiper-slide__stars">
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                            </ul>
+                            <p class="feedbackSwiper-slide__text">Кожен учитель трохи психолог. Це про нього. Можу сказати лише хороше. Дуже дякую за ваше терпіння.</p>
+                            <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
+                        </div>
+                    </div>
+                    <div class="feedbackSwiper-slide swiper-slide">
+                        <div class="feedbackSwiper-slide__inner">
+                            <div class="feedbackSwiper-slide__head">
+                                <p class="feedbackSwiper-slide__name">Юлия</p>
+                                <p class="feedbackSwiper-slide__date">02.06.2023</p>
+                            </div>
+                            <ul class="feedbackSwiper-slide__stars">
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                            </ul>
+                            <p class="feedbackSwiper-slide__text">Кожен учитель трохи психолог. Це про нього. Можу сказати лише хороше. Дуже дякую за ваше терпіння.</p>
+                            <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
+                        </div>
+                    </div>
+                    <div class="feedbackSwiper-slide swiper-slide">
+                        <div class="feedbackSwiper-slide__inner">
+                            <div class="feedbackSwiper-slide__head">
+                                <p class="feedbackSwiper-slide__name">Юлия</p>
+                                <p class="feedbackSwiper-slide__date">02.06.2023</p>
+                            </div>
+                            <ul class="feedbackSwiper-slide__stars">
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                            </ul>
+                            <p class="feedbackSwiper-slide__text">Кожен учитель трохи психолог. Це про нього. Можу сказати лише хороше. Дуже дякую за ваше терпіння.</p>
+                            <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
+                        </div>
+                    </div>
+                    <div class="feedbackSwiper-slide swiper-slide">
+                        <div class="feedbackSwiper-slide__inner">
+                            <div class="feedbackSwiper-slide__head">
+                                <p class="feedbackSwiper-slide__name">Юлия</p>
+                                <p class="feedbackSwiper-slide__date">02.06.2023</p>
+                            </div>
+                            <ul class="feedbackSwiper-slide__stars">
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                            </ul>
+                            <p class="feedbackSwiper-slide__text">Кожен учитель трохи психолог. Це про нього. Можу сказати лише хороше. Дуже дякую за ваше терпіння.</p>
+                            <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
+                        </div>
+                    </div>
+                    <div class="feedbackSwiper-slide swiper-slide">
+                        <div class="feedbackSwiper-slide__inner">
+                            <div class="feedbackSwiper-slide__head">
+                                <p class="feedbackSwiper-slide__name">Юлия</p>
+                                <p class="feedbackSwiper-slide__date">02.06.2023</p>
+                            </div>
+                            <ul class="feedbackSwiper-slide__stars">
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                            </ul>
+                            <p class="feedbackSwiper-slide__text">Кожен учитель трохи психолог. Це про нього. Можу сказати лише хороше. Дуже дякую за ваше терпіння.</p>
+                            <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
+                        </div>
+                    </div>
+                    <div class="feedbackSwiper-slide swiper-slide">
+                        <div class="feedbackSwiper-slide__inner">
+                            <div class="feedbackSwiper-slide__head">
+                                <p class="feedbackSwiper-slide__name">Юлия</p>
+                                <p class="feedbackSwiper-slide__date">02.06.2023</p>
+                            </div>
+                            <ul class="feedbackSwiper-slide__stars">
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                            </ul>
+                            <p class="feedbackSwiper-slide__text">Кожен учитель трохи психолог. Це про нього. Можу сказати лише хороше. Дуже дякую за ваше терпіння.</p>
+                            <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
+                        </div>
+                    </div>
+                    <div class="feedbackSwiper-slide swiper-slide">
+                        <div class="feedbackSwiper-slide__inner">
+                            <div class="feedbackSwiper-slide__head">
+                                <p class="feedbackSwiper-slide__name">Юлия</p>
+                                <p class="feedbackSwiper-slide__date">02.06.2023</p>
+                            </div>
+                            <ul class="feedbackSwiper-slide__stars">
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                            </ul>
+                            <p class="feedbackSwiper-slide__text">Кожен учитель трохи психолог. Це про нього. Можу сказати лише хороше. Дуже дякую за ваше терпіння.</p>
+                            <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
+                        </div>
+                    </div>
+                    <div class="feedbackSwiper-slide swiper-slide">
+                        <div class="feedbackSwiper-slide__inner">
+                            <div class="feedbackSwiper-slide__head">
+                                <p class="feedbackSwiper-slide__name">Юлия</p>
+                                <p class="feedbackSwiper-slide__date">02.06.2023</p>
+                            </div>
+                            <ul class="feedbackSwiper-slide__stars">
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                            </ul>
+                            <p class="feedbackSwiper-slide__text">Кожен учитель трохи психолог. Це про нього. Можу сказати лише хороше. Дуже дякую за ваше терпіння.</p>
+                            <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
+                        </div>
+                    </div>
+                    <div class="feedbackSwiper-slide swiper-slide">
+                        <div class="feedbackSwiper-slide__inner">
+                            <div class="feedbackSwiper-slide__head">
+                                <p class="feedbackSwiper-slide__name">Юлия</p>
+                                <p class="feedbackSwiper-slide__date">02.06.2023</p>
+                            </div>
+                            <ul class="feedbackSwiper-slide__stars">
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                            </ul>
+                            <p class="feedbackSwiper-slide__text">Кожен учитель трохи психолог. Це про нього. Можу сказати лише хороше. Дуже дякую за ваше терпіння.</p>
+                            <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
+                        </div>
+                    </div>
+                    <div class="feedbackSwiper-slide swiper-slide">
+                        <div class="feedbackSwiper-slide__inner">
+                            <div class="feedbackSwiper-slide__head">
+                                <p class="feedbackSwiper-slide__name">Юлия</p>
+                                <p class="feedbackSwiper-slide__date">02.06.2023</p>
+                            </div>
+                            <ul class="feedbackSwiper-slide__stars">
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                            </ul>
+                            <p class="feedbackSwiper-slide__text">Кожен учитель трохи психолог. Це про нього. Можу сказати лише хороше. Дуже дякую за ваше терпіння.</p>
+                            <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedbackSwiper-control">
+                    <div class="feedbackSwiper-prev">
+                        <img class="feedbackSwiper-control-arrow" src="assets/slide-back.svg">
+                    </div>
+                    <div class="feedbackSwiper-pagination"></div>
+                    <div class="feedbackSwiper-next">
+                        <img class="feedbackSwiper-control-arrow" src="assets/slide-next.svg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="faq" data-aos="fade-up">
+            <h2 class="title">FAQ</h2>
+            <div class="dropdown faq__dropdown">
+                <div class="dropdown-button">
+                    <span class="dropdown-button-title">Скільки часу потрібно для дизайну та розробки веб-сайту?</span>
+                </div>
+                <div class="dropdown-content">
+                    <span class="dropdown-button-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam blanditiis fugiat nihil voluptates. Accusamus adipisci esse itaque minima molestiae odit pariatur possimus quaerat, quas quibusdam quod ratione repudiandae suscipit?
+                    </span>
+                </div>
+                <img class="dropdown-icon" src="assets/cross.svg" alt="">
+            </div>
+            <div class="dropdown faq__dropdown">
+                <div class="dropdown-button">
+                    <span class="dropdown-button-title">Скільки часу потрібно для дизайну та розробки веб-сайту?</span>
+                </div>
+                <div class="dropdown-content">
+                    <span class="dropdown-button-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam blanditiis fugiat nihil voluptates. Accusamus adipisci esse itaque minima molestiae odit pariatur possimus quaerat, quas quibusdam quod ratione repudiandae suscipit?
+                    </span>
+                </div>
+                <img class="dropdown-icon" src="assets/cross.svg" alt="">
+            </div>
+            <div class="dropdown faq__dropdown">
+                <div class="dropdown-button">
+                    <span class="dropdown-button-title">Скільки часу потрібно для дизайну та розробки веб-сайту?</span>
+                </div>
+                <div class="dropdown-content">
+                    <span class="dropdown-button-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam blanditiis fugiat nihil voluptates. Accusamus adipisci esse itaque minima molestiae odit pariatur possimus quaerat, quas quibusdam quod ratione repudiandae suscipit?
+                    </span>
+                </div>
+                <img class="dropdown-icon" src="assets/cross.svg" alt="">
+            </div>
+            <div class="dropdown faq__dropdown">
+                <div class="dropdown-button">
+                    <span class="dropdown-button-title">Скільки часу потрібно для дизайну та розробки веб-сайту?</span>
+                </div>
+                <div class="dropdown-content">
+                    <span class="dropdown-button-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam blanditiis fugiat nihil voluptates. Accusamus adipisci esse itaque minima molestiae odit pariatur possimus quaerat, quas quibusdam quod ratione repudiandae suscipit?
+                    </span>
+                </div>
+                <img class="dropdown-icon" src="assets/cross.svg" alt="">
+            </div>
+            <div class="dropdown faq__dropdown">
+                <div class="dropdown-button">
+                    <span class="dropdown-button-title">Скільки часу потрібно для дизайну та розробки веб-сайту?</span>
+                </div>
+                <div class="dropdown-content">
+                    <span class="dropdown-button-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam blanditiis fugiat nihil voluptates. Accusamus adipisci esse itaque minima molestiae odit pariatur possimus quaerat, quas quibusdam quod ratione repudiandae suscipit?
+                    </span>
+                </div>
+                <img class="dropdown-icon" src="assets/cross.svg" alt="">
+            </div>
+        </section>
+        <section class="contacts" id="contacts" data-aos="fade-up">
+            <h2 class="title">Контакти</h2>
+            <form class="contacts__form" action="">
+                <input class="contacts__input" type="text" placeholder="Введіть ваше ім'я *">
+                <input class="contacts__input" type="text" placeholder="Номер телефону *">
+                <div class="dropdown contacts__dropdown">
+                    <div class="dropdown-button">Тип послуги</div>
+                    <div class="dropdown-content">
+                        <div class="dropdown-item">Курс "Максимум"</div>
+                        <div class="dropdown-item">Курс "Мобільний"</div>
+                        <div class="dropdown-item">Індивідуальні заняття</div>
+                    </div>
+                    <img class="dropdown-icon" src="assets/cross.svg" alt="">
+                </div>
+                <button class="contacts__btn button-orange">дізнатись</button>
+            </form>
+            <ul class="contacts__list">
+                <li class="contacts__item">
+                    Номер телефону
+                </li>
+                <li class="contacts__item contacts__item-mb40">
+                    <a href="tel:380505231731">+380505231731</a>
+                </li>
+                <li class="contacts__item contacts__item-social contacts__item-mb40">
+                    <a class="contacts__item-social-link contacts__item-social--telegram" href="https://t.me/+380505231731">
+                        <img class="contacts__item-social-img" src="assets/telegram-contacts.svg" alt="Telegram">
+                        <span class="contacts__item-social-text">Telegram</span>
+                    </a>
+                    <a class="contacts__item-social-link contacts__item-social--whatsapp" href="https://t.me/+380505231731">
+                        <img class="contacts__item-social-img" src="assets/whatsapp-contacts.svg" alt="Whatsapp">
+                        <span class="contacts__item-social-text">Telegram</span>
+                    </a>
+                </li>
+                <li class="contacts__item">
+                    Зв'яжіться з нами!
+                </li>
+                <li class="contacts__item contacts__item-mb40">
+                    <a class="footer__menu-link footer__menu-email-link" href="mailto:educenmaximum@gmail.com">educenmaximum@gmail.com</a>
+                </li>
+                <li class="contacts__item">
+                    Ми в соцмережах
+                </li>
+                <li class="contacts__item">
+                    <a class="contacts__item-social-link contacts__item-facebook" href="http://www.facebook.com/YOURUSERNAMEHERE">
+                        <span class="contacts__item-social-text">facebook</span>
+                    </a>
+                    <a class="contacts__item-social-link contacts__item-instagram"  href="instagram//:">
+                        <span class="contacts__item-social-text">instagram</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer" data-aos="fade-up">
+        <form class="footer__form">
+            <h2 class="title">Дізнатись більше</h2>
+            <input class="footer__form-input" type="text" placeholder="Введіть ім’я">
+            <input class="footer__form-input" type="tel" placeholder="+38 (ХХХ) ХХ ХХ ХХ">
+            <button class="button-purple">дізнатись</button>
+        </form>
+        <div class="footer__menu-inner">
+            <ul class="footer__menu-list footer__menu-list-main">
+                <li class="footer__menu-item">
+                    <img class="footer__menu-phone-img" src="assets/phone.svg" alt="Phone link image">
+                    <a class="footer__menu-link" href="tel:380505231731">+380505231731</a>
+                </li>
+                <li class="footer__menu-item">
+                    <img class="footer__menu-email-img" src="assets/email.svg" alt="Email link image">
+                    <a class="footer__menu-link footer__menu-email-link" href="mailto:educenmaximum@gmail.com">educenmaximum@gmail.com</a>
+                </li>
+                <li class="footer__menu-item">
+                    <span>Ми в соцмережах:</span>
+                </li>
+                <li class="footer__menu-item footer__menu-social">
+                    <a href="#" class="footer__menu-social-link">
+                        <img class="footer__menu-social-img" src="assets/whatsapp.svg" alt="Whatsapp link image">
+                    </a>
+                    <a href="#" class="footer__menu-social-link">
+                        <img class="footer__menu-social-img" src="assets/telegram.svg" alt="Telegram link image">
+                    </a>
+                    <a href="#" class="footer__menu-social-link">
+                        <img class="footer__menu-social-img" src="assets/facebook.svg" alt="Facebook link image">
+                    </a>
+                    <a href="#" class="footer__menu-social-link">
+                        <img class="footer__menu-social-img" src="assets/instagram.svg" alt="Instagram link image">
+                    </a>
+                </li>
+                <li class="footer__menu-item footer__menu-item--policy">
+                    <a class="footer__policy" href="#">Політика к онфіденційності</a>
+                </li>
+                <li class="footer__menu-item footer__menu-item--contract">
+                    <a class="footer__contract" href="#">Договір оферти</a>
+                </li>
+            </ul>
+        </div>
+        <ul class="footer-links__list">
+            <li class="footer-links__item footer-links__item-1">
+                <a href="#" class="footer-links__link">Навчання</a>
+            </li>
+            <li class="footer-links__item footer-links__item-2">
+                <a href="#" class="footer-links__link">Продукти</a>
+            </li>
+            <li class="footer-links__item footer-links__item-3">
+                <a href="#" class="footer-links__link">
+                    <img class="footer-links__link-logo" src="assets/logo-black.svg" alt="">
+                </a>
+            </li>
+            <li class="footer-links__item footer-links__item-4">
+                <a href="#" class="footer-links__link">Відгуки</a>
+            </li>
+            <li class="footer-links__item footer-links__item-5">
+                <a href="#" class="footer-links__link">Контакти</a>
+            </li>
+        </ul>
+        <div class="footer__rights">
+            <a class="footer__rights-link" href="#">maximum.com.ua (с) 2023</a>
+            <a class="footer__rights-link" href="#">by kravatka.agency</a>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="index.js"></script>
+</html>
