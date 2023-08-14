@@ -10,10 +10,30 @@
     color: #F9F9F9;
     font-weight: bold;
     font-size: 28px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 .button-orange{
     background-color: #F9A139;
     width: calc(100% - 145px);
+}
+.button-blue{
+    background-color: #91C6E8;
+}
+.button-orange:hover{
+    opacity: 0.8;
+}
+.button-blue:hover{
+    background-color: #A1DAFF;
+}
+.button-purple{
+    background-color: #964E71;
+}
+.button-purple:hover{
+    background-color: #BB6E93;
 }
 
 .header__mobile-enroll{
@@ -50,10 +70,24 @@
 .hero .button-orange:hover{
     box-shadow: 0px 10px 27px 0px rgba(249, 161, 57, 0.50);
 }
-
-
 .products .button-blue,
 .products .button-orange,
 .products .button-purple{
     width: 100%;
+}
+
+#scrollToTopBtn {
+    opacity: 1;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 40%;
+    right: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }

@@ -1,4 +1,5 @@
 .offer{
+    position: relative;
     padding: 0 15px;
 }
 .offer h2{
@@ -12,8 +13,13 @@
 }
 
 @media (min-width: 1140px) {
+    .offer{
+        max-width: 1280px;
+        margin: 0 auto;
+    }
     .offer__wrapper{
         width: 50% !important;
+        padding: 0 50px 0 0;
     }
     .offer__video{
         width: 50%;

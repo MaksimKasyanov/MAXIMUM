@@ -8,10 +8,16 @@
     <title>MAXIMUM</title>
     <link rel="icon" type="image/png" href="assets/tab-icon.png" />
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Raleway:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/gotham-6" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/offer.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/contacts.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/dropdowns.css">
@@ -91,10 +97,33 @@
                 </div>
             </div>
 
-            <button class="header__mobile-enroll">записатись</button>
+            <button class="header__mobile-enroll popup__open-btn">записатись</button>
             <button class="header__burger">
                 <img class="header__burger-img" src="assets/burger.svg" alt="">
             </button>
+        </div>
+        <div class="popup">
+            <div class="popup__wrapper">
+                <button class="popup__close-btn">
+                    <img class="popup__close-img" src="assets/close.svg" alt="Close menu button">
+                </button>
+                <h2>Записатись на курс</h2>
+                <form class="contacts__form" action="">
+                    <input class="contacts__input" type="text" placeholder="Введіть ваше ім'я *">
+                    <input class="contacts__input" type="text" placeholder="Номер телефону *">
+                    <div class="dropdown contacts__dropdown">
+                        <div class="dropdown-button">Тип послуги</div>
+                        <div class="dropdown-content">
+                            <div class="dropdown-item">Курс "Максимум"</div>
+                            <div class="dropdown-item">Курс "Мобільний"</div>
+                            <div class="dropdown-item">Індивідуальні заняття</div>
+                        </div>
+                        <img class="dropdown-icon" src="assets/cross.svg" alt="">
+                    </div>
+                    <button class="contacts__btn button-orange">записатись</button>
+                </form>
+            </div>
+
         </div>
     </header>
     <main class="main">
@@ -106,25 +135,26 @@
                     <img class="hero__img" src="assets/hero-img.png" alt="Hero image">
                     <div class="waves">
                         <div class="waves__img">
-                            <img src="assets/wave.svg" alt="Image 1" class="image">
-                            <img src="assets/wave.svg" alt="Image 2" class="image">
+                            <img src="assets/wave.svg" alt="Image 1" class="Wave image">
+                            <img src="assets/wave.svg" alt="Image 2" class="Wave image">
                         </div>
                     </div>
-                    <img class="hero__abacus" src="assets/abacus.svg" alt="">
+                    <img class="hero__abacus" src="assets/abacus.svg" alt="Abacus">
                     <div class="hero__circle">
                         <div class="hero__circle-img">
                             <img src="assets/circle.svg" alt="Circle">
                         </div>
                     </div>
+                    <img class="hero__red-shadow" src="assets/red-shadow.png" alt="Shadow">
+                    <img class="hero__blue-shadow" src="assets/blue-shadow.png" alt="Shadow">
                 </div>
                 <h1 class="hero__name">"Максимум"</h1>
             </div>
-
-            <button class="button-orange">записатись</button>
+            <button class="button-orange popup__open-btn">записатись</button>
         </section>
         <section class="offer" data-aos="fade-up">
             <div class="offer__wrapper">
-                <h2 class="title">Що ми пропонуємо?</h2>
+                <h2>Що ми пропонуємо?</h2>
                 <p class="offer__descr">
                     Якісна підготовка до НМТ з математики. <br>
                     Нічого зайвого, максимум зручності, щоб початковий рівень учня мав значення.
@@ -134,18 +164,23 @@
                 <source src="assets/video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+            <div class="offer__star">
+                <div class="offer__star-img">
+                    <img src="assets/star.svg" alt="Star">
+                </div>
+            </div>
         </section>
+        <h2>Як ми навчаємо</h2>
         <section class="about" id="about" data-aos="fade-up">
-            <h2 class="title">Як ми навчаємо</h2>
-            <p class="about__item" data-aos="fade-up">Оптимізована програма підготовки</p>
-            <p class="about__item" data-aos="fade-down">Онлайн - заняття з викладачем</p>
-            <p class="about__item" data-aos="fade-up">ДЗ з перевіркою</p>
-            <p class="about__item" data-aos="fade-down">Велика кількість теоретичного матеріалу з доступом 24\7</p>
-            <p class="about__item" data-aos="fade-up">Відео усіх уроків</p>
-            <p class="about__item" data-aos="fade-down">Тренувальні тести</p>
+            <p class="about__item about__item-1" data-aos="fade-up">Оптимізована програма підготовки</p>
+            <p class="about__item about__item-2" data-aos="fade-down">Онлайн - заняття з викладачем</p>
+            <p class="about__item about__item-3" data-aos="fade-up">ДЗ з перевіркою</p>
+            <p class="about__item about__item-4" data-aos="fade-down">Велика кількість теоретичного матеріалу з доступом 24\7</p>
+            <p class="about__item about__item-5" data-aos="fade-up">Відео усіх уроків</p>
+            <p class="about__item about__item-6" data-aos="fade-down">Тренувальні тести</p>
         </section>
+        <h2>Наші продукти</h2>
         <section class="products" id="products" data-aos="fade-up">
-            <h2 class="title">Наші продукти</h2>
             <div class="products__item">
                 <h3 class="products__item-title">
                     Курс "<span style="color: #F9A139">Максимум</span>"
@@ -173,7 +208,7 @@
                         Вартість <span style="color: #F9A139; font-size: 32px; font-weight: bold;">200</span> грн\тиждень (можлива знижка до 20 %)
                     </li>
                 </ul>
-                <button class="button-orange">дізнатись</button>
+                <button class="button-orange popup__open-btn">записатись</button>
             </div>
             <div class="products__item">
                 <h3 class="products__item-title">
@@ -202,51 +237,55 @@
                         Вартість <span style="color: #91C6E8; font-size: 32px; font-weight: bold;">100</span> грн\тиждень (можлива знижка до 20 %)
                     </li>
                 </ul>
-                <button class="button-orange">дізнатись</button>
+                <button class="button-blue popup__open-btn">записатись</button>
             </div>
             <div class="products__item">
                 <h3 class="products__item-title">
-                    <span style="color: #964E71">Індивідуальні</span> заняття
+                    <span style="color: #964E71">Індивідуальні</span> заняття <br>
+                    <span class="products__item-descr">(алгебра, геометрія, фізика)</span>
                 </h3>
                 <ul class="products__list">
-                    <li class="products__list-item" data-aos="flip-left">
-                        Відео з теорією
-                    </li>
                     <li class="products__list-item" data-aos="flip-right">
-                        Онлайн-заняття в малих групах
+                        60 хвилин якісного навчання
                     </li>
                     <li class="products__list-item" data-aos="flip-left">
-                        Шпаргалки з формулами
+                        Персоналізована програма підготовки з урахуванням потреб та поточного рівня учня
                     </li>
                     <li class="products__list-item" data-aos="flip-right">
-                        ДЗ з перевіркою та ключами
+                        Будь-який клас шкільної програми
                     </li>
                     <li class="products__list-item" data-aos="flip-left">
-                        Консультації викладача
+                        Контакт з вчителем 
                     </li>
                     <li class="products__list-item" data-aos="flip-right">
-                        Доступ до усіх пройдених матеріалів 24\7
+                        ДЗ з опрацюванням
                     </li>
-                    <li class="products__list-item">
-                        Вартість <span style="color: #964E71; font-size: 32px; font-weight: bold;">400</span> грн\тиждень (можлива знижка до 20 %)
+                    <li class="products__list-item" data-aos="flip-left">
+                        Вартість <span style="color: #964E71; font-size: 32px; font-weight: bold;">400</span>
                     </li>
                 </ul>
-                <button class="button-orange">дізнатись</button>
+                <button class="button-purple popup__open-btn">записатись</button>
             </div>
         </section>
+        <h2>Дізнатись більше</h2>
         <section class="info" data-aos="fade-up">
-            <h2 class="title">Дізнатись більше</h2>
+
             <form class="info__form">
                 <span class="info__form-descr">Ім’я</span>
                 <input class="footer__form-input" type="text" placeholder="Введіть ім’я">
                 <span class="info__form-descr">Номер телефону</span>
                 <input class="footer__form-input" type="tel" placeholder="+38 (ХХХ) ХХ ХХ ХХ">
                 <button class="button-orange">дізнатись</button>
+                <div class="products__flower">
+                    <div class="products__flower-img">
+                        <img src="assets/flower.svg" alt="Flower">
+                    </div>
+                </div>
             </form>
         </section>
         <section class="feedback" id="feedback">
             <div class="feedbackSwiper swiper">
-                <h2 class="title">Відгуки</h2>
+                <h2>Відгуки</h2>
                 <div class="feedbackSwiper-wrapper swiper-wrapper">
                     <div class="feedbackSwiper-slide swiper-slide">
                         <div class="feedbackSwiper-slide__inner">
@@ -585,7 +624,7 @@
             </div>
         </section>
         <section class="faq" data-aos="fade-up">
-            <h2 class="title">FAQ</h2>
+            <h2>FAQ</h2>
             <div class="dropdown faq__dropdown">
                 <div class="dropdown-button">
                     <span class="dropdown-button-title">Скільки часу потрібно для дизайну та розробки веб-сайту?</span>
@@ -640,10 +679,15 @@
                     </span>
                 </div>
                 <img class="dropdown-icon" src="assets/cross.svg" alt="">
+            </div>
+            <div class="faq__cube">
+                <div class="faq__cube-img">
+                    <img src="assets/cube.svg" alt="Cube">
+                </div>
             </div>
         </section>
+        <h2 class="title">Контакти</h2>
         <section class="contacts" id="contacts" data-aos="fade-up">
-            <h2 class="title">Контакти</h2>
             <form class="contacts__form" action="">
                 <input class="contacts__input" type="text" placeholder="Введіть ваше ім'я *">
                 <input class="contacts__input" type="text" placeholder="Номер телефону *">
@@ -656,7 +700,7 @@
                     </div>
                     <img class="dropdown-icon" src="assets/cross.svg" alt="">
                 </div>
-                <button class="contacts__btn button-orange">дізнатись</button>
+                <button class="contacts__btn button-orange popup__open-btn">записатись</button>
             </form>
             <ul class="contacts__list">
                 <li class="contacts__item">
@@ -696,70 +740,83 @@
         </section>
     </main>
     <footer class="footer" data-aos="fade-up">
-        <form class="footer__form">
-            <h2 class="title">Дізнатись більше</h2>
-            <input class="footer__form-input" type="text" placeholder="Введіть ім’я">
-            <input class="footer__form-input" type="tel" placeholder="+38 (ХХХ) ХХ ХХ ХХ">
-            <button class="button-purple">дізнатись</button>
-        </form>
-        <div class="footer__menu-inner">
-            <ul class="footer__menu-list footer__menu-list-main">
-                <li class="footer__menu-item">
-                    <img class="footer__menu-phone-img" src="assets/phone.svg" alt="Phone link image">
-                    <a class="footer__menu-link" href="tel:380505231731">+380505231731</a>
+        <img class="footer-abacus" src="assets/footer-abacus.svg" alt="">
+        <div class="footer__wrapper">
+            <form class="footer__form">
+                <h2>Дізнатись більше</h2>
+                <input class="footer__form-input" type="text" placeholder="Введіть ім’я">
+                <input class="footer__form-input" type="tel" placeholder="+38 (ХХХ) ХХ ХХ ХХ">
+                <button class="button-purple">дізнатись</button>
+            </form>
+            <div class="footer__menu-inner">
+                <ul class="footer__menu-list footer__menu-list-main">
+                    <li class="footer__menu-item">
+                        <img class="footer__menu-phone-img" src="assets/phone.svg" alt="Phone link image">
+                        <a class="footer__menu-link" href="tel:380505231731">+380505231731</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <img class="footer__menu-email-img" src="assets/email.svg" alt="Email link image">
+                        <a class="footer__menu-link footer__menu-email-link" href="mailto:educenmaximum@gmail.com">educenmaximum@gmail.com</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <span>Ми в соцмережах:</span>
+                    </li>
+                    <li class="footer__menu-item footer__menu-social">
+                        <a href="#" class="footer__menu-social-link">
+                            <img class="footer__menu-social-img" src="assets/whatsapp.svg" alt="Whatsapp link image">
+                        </a>
+                        <a href="#" class="footer__menu-social-link">
+                            <img class="footer__menu-social-img" src="assets/telegram.svg" alt="Telegram link image">
+                        </a>
+                        <a href="#" class="footer__menu-social-link">
+                            <img class="footer__menu-social-img" src="assets/facebook.svg" alt="Facebook link image">
+                        </a>
+                        <a href="#" class="footer__menu-social-link">
+                            <img class="footer__menu-social-img" src="assets/instagram.svg" alt="Instagram link image">
+                        </a>
+                    </li>
+                    <li class="footer__menu-item footer__menu-item--policy">
+                        <a class="footer__policy" href="#">Політика к онфіденційності</a>
+                    </li>
+                    <li class="footer__menu-item footer__menu-item--contract">
+                        <a class="footer__contract" href="#">Договір оферти</a>
+                    </li>
+                </ul>
+            </div>
+            <button id="scrollToTopBtn">
+                <img src="assets/scroll-to-top.svg" alt="Scroll to top">
+            </button>
+        </div>
+        <div class="footer-links__wrapper">
+            <ul class="footer-links__list">
+                <li class="footer-links__item footer-links__item-1">
+                    <a href="#" class="footer-links__link">Навчання</a>
                 </li>
-                <li class="footer__menu-item">
-                    <img class="footer__menu-email-img" src="assets/email.svg" alt="Email link image">
-                    <a class="footer__menu-link footer__menu-email-link" href="mailto:educenmaximum@gmail.com">educenmaximum@gmail.com</a>
+                <li class="footer-links__item footer-links__item-2">
+                    <a href="#" class="footer-links__link">Продукти</a>
                 </li>
-                <li class="footer__menu-item">
-                    <span>Ми в соцмережах:</span>
-                </li>
-                <li class="footer__menu-item footer__menu-social">
-                    <a href="#" class="footer__menu-social-link">
-                        <img class="footer__menu-social-img" src="assets/whatsapp.svg" alt="Whatsapp link image">
+                <li class="footer-links__item footer-links__item-3">
+                    <a href="#" class="footer-links__link">
+                        <img class="footer-links__link-logo" src="assets/logo-black.svg" alt="">
                     </a>
-                    <a href="#" class="footer__menu-social-link">
-                        <img class="footer__menu-social-img" src="assets/telegram.svg" alt="Telegram link image">
-                    </a>
-                    <a href="#" class="footer__menu-social-link">
-                        <img class="footer__menu-social-img" src="assets/facebook.svg" alt="Facebook link image">
-                    </a>
-                    <a href="#" class="footer__menu-social-link">
-                        <img class="footer__menu-social-img" src="assets/instagram.svg" alt="Instagram link image">
-                    </a>
                 </li>
-                <li class="footer__menu-item footer__menu-item--policy">
-                    <a class="footer__policy" href="#">Політика к онфіденційності</a>
+                <li class="footer-links__item footer-links__item-4">
+                    <a href="#" class="footer-links__link">Відгуки</a>
                 </li>
-                <li class="footer__menu-item footer__menu-item--contract">
-                    <a class="footer__contract" href="#">Договір оферти</a>
+                <li class="footer-links__item footer-links__item-5">
+                    <a href="#" class="footer-links__link">Контакти</a>
                 </li>
             </ul>
         </div>
-        <ul class="footer-links__list">
-            <li class="footer-links__item footer-links__item-1">
-                <a href="#" class="footer-links__link">Навчання</a>
-            </li>
-            <li class="footer-links__item footer-links__item-2">
-                <a href="#" class="footer-links__link">Продукти</a>
-            </li>
-            <li class="footer-links__item footer-links__item-3">
-                <a href="#" class="footer-links__link">
-                    <img class="footer-links__link-logo" src="assets/logo-black.svg" alt="">
-                </a>
-            </li>
-            <li class="footer-links__item footer-links__item-4">
-                <a href="#" class="footer-links__link">Відгуки</a>
-            </li>
-            <li class="footer-links__item footer-links__item-5">
-                <a href="#" class="footer-links__link">Контакти</a>
-            </li>
-        </ul>
+
+
         <div class="footer__rights">
-            <a class="footer__rights-link" href="#">maximum.com.ua (с) 2023</a>
-            <a class="footer__rights-link" href="#">by kravatka.agency</a>
+            <div class="footer__rights-wrapper">
+                <a class="footer__rights-link" href="#">maximum.com.ua (с) 2023</a>
+                <a class="footer__rights-link" href="#">by kravatka.agency</a>
+            </div>
         </div>
+
     </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
@@ -767,5 +824,5 @@
 <script>
     AOS.init();
 </script>
-<script src="index.js"></script>
+<script src="main.js"></script>
 </html>

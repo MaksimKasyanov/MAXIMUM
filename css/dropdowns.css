@@ -46,9 +46,10 @@
 }
 
 .dropdown-button-title{
+    font-family: 'Gotham Black', sans-serif;
     max-width: 280px;
     font-weight: bold;
-    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
 }
 .dropdown-button-text{
     display: block;
@@ -56,4 +57,14 @@
 }
 .faq__dropdown{
     width: 100%;
+}
+@media (min-width: 768px) {
+    .dropdown-button-title {
+        max-width: 90%;
+    }
+}
+@media (min-width: 1140px) {
+    .dropdown-button-title {
+        max-width: 90%;
+    }
 }
