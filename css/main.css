@@ -110,6 +110,7 @@ h2 {
     margin-bottom: 50px;
     text-align: center;
     font-size: 54px;
+    padding-top: 100px !important;
 }
 h3{
     font-size: 28px;
