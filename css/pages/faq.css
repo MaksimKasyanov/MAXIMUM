@@ -1,0 +1,16 @@
+.faq{
+    position: relative;
+    padding: 0 15px;
+    margin-bottom: 100px;
+}
+.faq .dropdown-icon {
+    top: 14px;
+}
+
+@media (min-width: 1140px) {
+    .faq{
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+}

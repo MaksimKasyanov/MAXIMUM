@@ -11,18 +11,18 @@
     <link href="https://fonts.cdnfonts.com/css/gotham-6" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/hero.css">
-    <link rel="stylesheet" href="css/offer.css">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/products.css">
-    <link rel="stylesheet" href="css/info.css">
-    <link rel="stylesheet" href="css/faq.css">
-    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/pages/hero.css">
+    <link rel="stylesheet" href="css/pages/offer.css">
+    <link rel="stylesheet" href="css/pages/about.css">
+    <link rel="stylesheet" href="css/pages/products.css">
+    <link rel="stylesheet" href="css/pages/info.css">
+    <link rel="stylesheet" href="css/pages/faq.css">
+    <link rel="stylesheet" href="css/pages/contacts.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/dropdowns.css">
     <link rel="stylesheet" href="css/shapes.css">
-    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/pages/feedback.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 
@@ -127,7 +127,7 @@
         </div>
     </header>
     <main class="main">
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="hero__wrapper">
                 <h1 class="hero__title"><span>Освітній</span> центр</h1>
                 <p class="hero__text">Тут розумнішають</p>
@@ -136,7 +136,6 @@
                     <div class="waves">
                         <div class="waves__img">
                             <img src="assets/wave.svg" alt="Image 1" class="Wave image">
-                            <img src="assets/wave.svg" alt="Image 2" class="Wave image">
                         </div>
                     </div>
                     <img class="hero__abacus" src="assets/abacus.svg" alt="Abacus">
@@ -170,8 +169,8 @@
                 </div>
             </div>
         </section>
-        <h2>Як ми навчаємо</h2>
-        <section class="about" id="about" data-aos="fade-up">
+        <h2  id="about">Як ми навчаємо</h2>
+        <section class="about" data-aos="fade-up">
             <p class="about__item about__item-1" data-aos="fade-up">Оптимізована програма підготовки</p>
             <p class="about__item about__item-2" data-aos="fade-down">Онлайн - заняття з викладачем</p>
             <p class="about__item about__item-3" data-aos="fade-up">ДЗ з перевіркою</p>
@@ -179,8 +178,8 @@
             <p class="about__item about__item-5" data-aos="fade-up">Відео усіх уроків</p>
             <p class="about__item about__item-6" data-aos="fade-down">Тренувальні тести</p>
         </section>
-        <h2>Наші продукти</h2>
-        <section class="products" id="products" data-aos="fade-up">
+        <h2 id="products">Наші продукти</h2>
+        <section class="products" data-aos="fade-up">
             <div class="products__item">
                 <h3 class="products__item-title">
                     Курс "<span style="color: #F9A139">Максимум</span>"
@@ -283,15 +282,43 @@
                 </div>
             </form>
         </section>
-        <section class="feedback" id="feedback">
-            <div class="feedbackSwiper swiper">
-                <h2>Відгуки</h2>
+
+        <section class="feedback">
+            <h2 id="feedback">Відгуки</h2>
+            <div class="feedbackSwiper swiper mobile">
                 <div class="feedbackSwiper-wrapper swiper-wrapper">
                     <div class="feedbackSwiper-slide swiper-slide">
                         <div class="feedbackSwiper-slide__inner">
                             <div class="feedbackSwiper-slide__head">
+                                <p class="feedbackSwiper-slide__name">Євгенія</p>
+                                <p class="feedbackSwiper-slide__date feedbackSwiper-slide__date">07.06.2023</p>
+                            </div>
+                            <ul class="feedbackSwiper-slide__stars">
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                            </ul>
+                            <p class="feedbackSwiper-slide__text">Все сподобалось, хороший репетитор, гарно пояснює. Мені сподобались уроки!</p>
+                            <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
+                        </div>
+                    </div>
+                    <div class="feedbackSwiper-slide swiper-slide">
+                        <div class="feedbackSwiper-slide__inner">
+                            <div class="feedbackSwiper-slide__head">
                                 <p class="feedbackSwiper-slide__name">Юлия</p>
-                                <p class="feedbackSwiper-slide__date feedbackSwiper-slide__date">02.06.2023</p>
+                                <p class="feedbackSwiper-slide__date">02.06.2023</p>
                             </div>
                             <ul class="feedbackSwiper-slide__stars">
                                 <li class="feedbackSwiper-slide__stars-item">
@@ -311,6 +338,33 @@
                                 </li>
                             </ul>
                             <p class="feedbackSwiper-slide__text">Кожен учитель трохи психолог. Це про нього. Можу сказати лише хороше. Дуже дякую за ваше терпіння.</p>
+                            <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
+                        </div>
+                    </div>
+                    <div class="feedbackSwiper-slide swiper-slide">
+                        <div class="feedbackSwiper-slide__inner">
+                            <div class="feedbackSwiper-slide__head">
+                                <p class="feedbackSwiper-slide__name">Тетяна</p>
+                                <p class="feedbackSwiper-slide__date">13.04.2023</p>
+                            </div>
+                            <ul class="feedbackSwiper-slide__stars">
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                            </ul>
+                            <p class="feedbackSwiper-slide__text">Дуже задоволена роботою репетитора, продовжуємо співпрацю.</p>
                             <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
                         </div>
                     </div>
@@ -371,8 +425,8 @@
                     <div class="feedbackSwiper-slide swiper-slide">
                         <div class="feedbackSwiper-slide__inner">
                             <div class="feedbackSwiper-slide__head">
-                                <p class="feedbackSwiper-slide__name">Юлия</p>
-                                <p class="feedbackSwiper-slide__date">02.06.2023</p>
+                                <p class="feedbackSwiper-slide__name">Тетяна</p>
+                                <p class="feedbackSwiper-slide__date">13.04.2023</p>
                             </div>
                             <ul class="feedbackSwiper-slide__stars">
                                 <li class="feedbackSwiper-slide__stars-item">
@@ -391,7 +445,7 @@
                                     <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
                                 </li>
                             </ul>
-                            <p class="feedbackSwiper-slide__text">Кожен учитель трохи психолог. Це про нього. Можу сказати лише хороше. Дуже дякую за ваше терпіння.</p>
+                            <p class="feedbackSwiper-slide__text">Дуже задоволена роботою репетитора, продовжуємо співпрацю.</p>
                             <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
                         </div>
                     </div>
@@ -452,8 +506,8 @@
                     <div class="feedbackSwiper-slide swiper-slide">
                         <div class="feedbackSwiper-slide__inner">
                             <div class="feedbackSwiper-slide__head">
-                                <p class="feedbackSwiper-slide__name">Юлия</p>
-                                <p class="feedbackSwiper-slide__date">02.06.2023</p>
+                                <p class="feedbackSwiper-slide__name">Тетяна</p>
+                                <p class="feedbackSwiper-slide__date">13.04.2023</p>
                             </div>
                             <ul class="feedbackSwiper-slide__stars">
                                 <li class="feedbackSwiper-slide__stars-item">
@@ -472,7 +526,7 @@
                                     <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
                                 </li>
                             </ul>
-                            <p class="feedbackSwiper-slide__text">Кожен учитель трохи психолог. Це про нього. Можу сказати лише хороше. Дуже дякую за ваше терпіння.</p>
+                            <p class="feedbackSwiper-slide__text">Дуже задоволена роботою репетитора, продовжуємо співпрацю.</p>
                             <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
                         </div>
                     </div>
@@ -533,8 +587,8 @@
                     <div class="feedbackSwiper-slide swiper-slide">
                         <div class="feedbackSwiper-slide__inner">
                             <div class="feedbackSwiper-slide__head">
-                                <p class="feedbackSwiper-slide__name">Юлия</p>
-                                <p class="feedbackSwiper-slide__date">02.06.2023</p>
+                                <p class="feedbackSwiper-slide__name">Тетяна</p>
+                                <p class="feedbackSwiper-slide__date">13.04.2023</p>
                             </div>
                             <ul class="feedbackSwiper-slide__stars">
                                 <li class="feedbackSwiper-slide__stars-item">
@@ -553,7 +607,7 @@
                                     <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
                                 </li>
                             </ul>
-                            <p class="feedbackSwiper-slide__text">Кожен учитель трохи психолог. Це про нього. Можу сказати лише хороше. Дуже дякую за ваше терпіння.</p>
+                            <p class="feedbackSwiper-slide__text">Дуже задоволена роботою репетитора, продовжуємо співпрацю.</p>
                             <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
                         </div>
                     </div>
@@ -608,6 +662,483 @@
                                 </li>
                             </ul>
                             <p class="feedbackSwiper-slide__text">Кожен учитель трохи психолог. Це про нього. Можу сказати лише хороше. Дуже дякую за ваше терпіння.</p>
+                            <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="feedbackSwiper-control">
+                    <div class="feedbackSwiper-prev">
+                        <img class="feedbackSwiper-control-arrow" src="assets/slide-back.svg">
+                    </div>
+                    <div class="feedbackSwiper-pagination"></div>
+                    <div class="feedbackSwiper-next">
+                        <img class="feedbackSwiper-control-arrow" src="assets/slide-next.svg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="feedbackSwiper swiper desktop">
+                <div class="feedbackSwiper-wrapper swiper-wrapper">
+                    <div class="feedbackSwiper-slide swiper-slide">
+                        <div class="feedbackSwiper-slide__inner">
+                            <div class="feedbackSwiper-slide__head">
+                                <p class="feedbackSwiper-slide__name">Євгенія</p>
+                                <p class="feedbackSwiper-slide__date feedbackSwiper-slide__date">07.06.2023</p>
+                            </div>
+                            <ul class="feedbackSwiper-slide__stars">
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                            </ul>
+                            <p class="feedbackSwiper-slide__text">Все сподобалось, хороший репетитор, гарно пояснює. Мені сподобались уроки!</p>
+                            <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
+                        </div>
+                        <div class="feedbackSwiper-slide__inner">
+                            <div class="feedbackSwiper-slide__head">
+                                <p class="feedbackSwiper-slide__name">Юлия</p>
+                                <p class="feedbackSwiper-slide__date">02.06.2023</p>
+                            </div>
+                            <ul class="feedbackSwiper-slide__stars">
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                            </ul>
+                            <p class="feedbackSwiper-slide__text">Кожен учитель трохи психолог. Це про нього. Можу сказати лише хороше. Дуже дякую за ваше терпіння.</p>
+                            <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
+                        </div>
+                        <div class="feedbackSwiper-slide__inner">
+                            <div class="feedbackSwiper-slide__head">
+                                <p class="feedbackSwiper-slide__name">Тетяна</p>
+                                <p class="feedbackSwiper-slide__date">13.04.2023</p>
+                            </div>
+                            <ul class="feedbackSwiper-slide__stars">
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                            </ul>
+                            <p class="feedbackSwiper-slide__text">Дуже задоволена роботою репетитора, продовжуємо співпрацю.</p>
+                            <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
+                        </div>
+                    </div>
+                    <div class="feedbackSwiper-slide swiper-slide">
+                        <div class="feedbackSwiper-slide__inner">
+                            <div class="feedbackSwiper-slide__head">
+                                <p class="feedbackSwiper-slide__name">Євгенія</p>
+                                <p class="feedbackSwiper-slide__date feedbackSwiper-slide__date">07.06.2023</p>
+                            </div>
+                            <ul class="feedbackSwiper-slide__stars">
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                            </ul>
+                            <p class="feedbackSwiper-slide__text">Все сподобалось, хороший репетитор, гарно пояснює. Мені сподобались уроки!</p>
+                            <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
+                        </div>
+                        <div class="feedbackSwiper-slide__inner">
+                            <div class="feedbackSwiper-slide__head">
+                                <p class="feedbackSwiper-slide__name">Юлия</p>
+                                <p class="feedbackSwiper-slide__date">02.06.2023</p>
+                            </div>
+                            <ul class="feedbackSwiper-slide__stars">
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                            </ul>
+                            <p class="feedbackSwiper-slide__text">Кожен учитель трохи психолог. Це про нього. Можу сказати лише хороше. Дуже дякую за ваше терпіння.</p>
+                            <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
+                        </div>
+                        <div class="feedbackSwiper-slide__inner">
+                            <div class="feedbackSwiper-slide__head">
+                                <p class="feedbackSwiper-slide__name">Тетяна</p>
+                                <p class="feedbackSwiper-slide__date">13.04.2023</p>
+                            </div>
+                            <ul class="feedbackSwiper-slide__stars">
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                            </ul>
+                            <p class="feedbackSwiper-slide__text">Дуже задоволена роботою репетитора, продовжуємо співпрацю.</p>
+                            <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
+                        </div>
+                    </div>
+                    <div class="feedbackSwiper-slide swiper-slide">
+                        <div class="feedbackSwiper-slide__inner">
+                            <div class="feedbackSwiper-slide__head">
+                                <p class="feedbackSwiper-slide__name">Євгенія</p>
+                                <p class="feedbackSwiper-slide__date feedbackSwiper-slide__date">07.06.2023</p>
+                            </div>
+                            <ul class="feedbackSwiper-slide__stars">
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                            </ul>
+                            <p class="feedbackSwiper-slide__text">Все сподобалось, хороший репетитор, гарно пояснює. Мені сподобались уроки!</p>
+                            <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
+                        </div>
+                        <div class="feedbackSwiper-slide__inner">
+                            <div class="feedbackSwiper-slide__head">
+                                <p class="feedbackSwiper-slide__name">Юлия</p>
+                                <p class="feedbackSwiper-slide__date">02.06.2023</p>
+                            </div>
+                            <ul class="feedbackSwiper-slide__stars">
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                            </ul>
+                            <p class="feedbackSwiper-slide__text">Кожен учитель трохи психолог. Це про нього. Можу сказати лише хороше. Дуже дякую за ваше терпіння.</p>
+                            <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
+                        </div>
+                        <div class="feedbackSwiper-slide__inner">
+                            <div class="feedbackSwiper-slide__head">
+                                <p class="feedbackSwiper-slide__name">Тетяна</p>
+                                <p class="feedbackSwiper-slide__date">13.04.2023</p>
+                            </div>
+                            <ul class="feedbackSwiper-slide__stars">
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                            </ul>
+                            <p class="feedbackSwiper-slide__text">Дуже задоволена роботою репетитора, продовжуємо співпрацю.</p>
+                            <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
+                        </div>
+                    </div>
+                    <div class="feedbackSwiper-slide swiper-slide">
+                        <div class="feedbackSwiper-slide__inner">
+                            <div class="feedbackSwiper-slide__head">
+                                <p class="feedbackSwiper-slide__name">Євгенія</p>
+                                <p class="feedbackSwiper-slide__date feedbackSwiper-slide__date">07.06.2023</p>
+                            </div>
+                            <ul class="feedbackSwiper-slide__stars">
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                            </ul>
+                            <p class="feedbackSwiper-slide__text">Все сподобалось, хороший репетитор, гарно пояснює. Мені сподобались уроки!</p>
+                            <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
+                        </div>
+                        <div class="feedbackSwiper-slide__inner">
+                            <div class="feedbackSwiper-slide__head">
+                                <p class="feedbackSwiper-slide__name">Юлия</p>
+                                <p class="feedbackSwiper-slide__date">02.06.2023</p>
+                            </div>
+                            <ul class="feedbackSwiper-slide__stars">
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                            </ul>
+                            <p class="feedbackSwiper-slide__text">Кожен учитель трохи психолог. Це про нього. Можу сказати лише хороше. Дуже дякую за ваше терпіння.</p>
+                            <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
+                        </div>
+                        <div class="feedbackSwiper-slide__inner">
+                            <div class="feedbackSwiper-slide__head">
+                                <p class="feedbackSwiper-slide__name">Тетяна</p>
+                                <p class="feedbackSwiper-slide__date">13.04.2023</p>
+                            </div>
+                            <ul class="feedbackSwiper-slide__stars">
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                            </ul>
+                            <p class="feedbackSwiper-slide__text">Дуже задоволена роботою репетитора, продовжуємо співпрацю.</p>
+                            <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
+                        </div>
+                    </div>
+                    <div class="feedbackSwiper-slide swiper-slide">
+                        <div class="feedbackSwiper-slide__inner">
+                            <div class="feedbackSwiper-slide__head">
+                                <p class="feedbackSwiper-slide__name">Євгенія</p>
+                                <p class="feedbackSwiper-slide__date feedbackSwiper-slide__date">07.06.2023</p>
+                            </div>
+                            <ul class="feedbackSwiper-slide__stars">
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                            </ul>
+                            <p class="feedbackSwiper-slide__text">Все сподобалось, хороший репетитор, гарно пояснює. Мені сподобались уроки!</p>
+                            <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
+                        </div>
+                        <div class="feedbackSwiper-slide__inner">
+                            <div class="feedbackSwiper-slide__head">
+                                <p class="feedbackSwiper-slide__name">Юлия</p>
+                                <p class="feedbackSwiper-slide__date">02.06.2023</p>
+                            </div>
+                            <ul class="feedbackSwiper-slide__stars">
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                            </ul>
+                            <p class="feedbackSwiper-slide__text">Кожен учитель трохи психолог. Це про нього. Можу сказати лише хороше. Дуже дякую за ваше терпіння.</p>
+                            <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
+                        </div>
+                        <div class="feedbackSwiper-slide__inner">
+                            <div class="feedbackSwiper-slide__head">
+                                <p class="feedbackSwiper-slide__name">Тетяна</p>
+                                <p class="feedbackSwiper-slide__date">13.04.2023</p>
+                            </div>
+                            <ul class="feedbackSwiper-slide__stars">
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                            </ul>
+                            <p class="feedbackSwiper-slide__text">Дуже задоволена роботою репетитора, продовжуємо співпрацю.</p>
+                            <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
+                        </div>
+                    </div>
+                    <div class="feedbackSwiper-slide swiper-slide">
+                        <div class="feedbackSwiper-slide__inner">
+                            <div class="feedbackSwiper-slide__head">
+                                <p class="feedbackSwiper-slide__name">Євгенія</p>
+                                <p class="feedbackSwiper-slide__date feedbackSwiper-slide__date">07.06.2023</p>
+                            </div>
+                            <ul class="feedbackSwiper-slide__stars">
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                            </ul>
+                            <p class="feedbackSwiper-slide__text">Все сподобалось, хороший репетитор, гарно пояснює. Мені сподобались уроки!</p>
+                            <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
+                        </div>
+                        <div class="feedbackSwiper-slide__inner">
+                            <div class="feedbackSwiper-slide__head">
+                                <p class="feedbackSwiper-slide__name">Юлия</p>
+                                <p class="feedbackSwiper-slide__date">02.06.2023</p>
+                            </div>
+                            <ul class="feedbackSwiper-slide__stars">
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                            </ul>
+                            <p class="feedbackSwiper-slide__text">Кожен учитель трохи психолог. Це про нього. Можу сказати лише хороше. Дуже дякую за ваше терпіння.</p>
+                            <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
+                        </div>
+                        <div class="feedbackSwiper-slide__inner">
+                            <div class="feedbackSwiper-slide__head">
+                                <p class="feedbackSwiper-slide__name">Тетяна</p>
+                                <p class="feedbackSwiper-slide__date">13.04.2023</p>
+                            </div>
+                            <ul class="feedbackSwiper-slide__stars">
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                                <li class="feedbackSwiper-slide__stars-item">
+                                    <img class="feedbackSwiper-slide__stars-mark" src="assets/star-mark.svg" alt="">
+                                </li>
+                            </ul>
+                            <p class="feedbackSwiper-slide__text">Дуже задоволена роботою репетитора, продовжуємо співпрацю.</p>
                             <p class="feedbackSwiper-slide__descr">Математика, Підготовка до ЗНО</p>
                         </div>
                     </div>
@@ -622,9 +1153,10 @@
                     </div>
                 </div>
             </div>
+
         </section>
+        <h2>FAQ</h2>
         <section class="faq" data-aos="fade-up">
-            <h2>FAQ</h2>
             <div class="dropdown faq__dropdown">
                 <div class="dropdown-button">
                     <span class="dropdown-button-title">Скільки часу потрібно для дизайну та розробки веб-сайту?</span>
@@ -686,8 +1218,8 @@
                 </div>
             </div>
         </section>
-        <h2 class="title">Контакти</h2>
-        <section class="contacts" id="contacts" data-aos="fade-up">
+        <h2 id="contacts">Контакти</h2>
+        <section class="contacts" data-aos="fade-up">
             <form class="contacts__form" action="">
                 <input class="contacts__input" type="text" placeholder="Введіть ваше ім'я *">
                 <input class="contacts__input" type="text" placeholder="Номер телефону *">
@@ -790,21 +1322,21 @@
         <div class="footer-links__wrapper">
             <ul class="footer-links__list">
                 <li class="footer-links__item footer-links__item-1">
-                    <a href="#" class="footer-links__link">Навчання</a>
+                    <a href="#about" class="footer-links__link">Навчання</a>
                 </li>
                 <li class="footer-links__item footer-links__item-2">
-                    <a href="#" class="footer-links__link">Продукти</a>
+                    <a href="#products" class="footer-links__link">Продукти</a>
                 </li>
                 <li class="footer-links__item footer-links__item-3">
-                    <a href="#" class="footer-links__link">
+                    <a href="#hero" class="footer-links__link">
                         <img class="footer-links__link-logo" src="assets/logo-black.svg" alt="">
                     </a>
                 </li>
                 <li class="footer-links__item footer-links__item-4">
-                    <a href="#" class="footer-links__link">Відгуки</a>
+                    <a href="#feedback" class="footer-links__link">Відгуки</a>
                 </li>
                 <li class="footer-links__item footer-links__item-5">
-                    <a href="#" class="footer-links__link">Контакти</a>
+                    <a href="#contacts" class="footer-links__link">Контакти</a>
                 </li>
             </ul>
         </div>
@@ -822,7 +1354,7 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
-    AOS.init();
+    AOS.init({once: true});
 </script>
 <script src="main.js"></script>
 </html>

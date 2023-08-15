@@ -90,11 +90,20 @@ let swiper = new Swiper(".feedbackSwiper", {
             spaceBetween: 20
         },
         1144: {
-            slidesPerView: 3,
-            spaceBetween: 40
+            slidesPerView: 1,
+            spaceBetween: 40,
+            autoplay: {
+                delay: 22000,
+            },
         }
     }
 });
+
+
+
+
+
+
 
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 scrollToTopBtn.addEventListener("click", () => {

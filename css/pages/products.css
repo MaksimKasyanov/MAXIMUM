@@ -1,0 +1,76 @@
+.products{
+    margin: 0 15px 100px;
+}
+.products__item{
+    padding: 30px 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.products__item-title{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.products__item-title span{
+    font-size: inherit;
+}
+.products__list{
+    margin-bottom: 40px;
+}
+.products__list-item{
+    position: relative;
+    padding-left: 40px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+.products__list-item:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url('../../assets/check-mark.svg');
+}
+.products__item-descr{
+    font-size: 18px !important;
+}
+@media (min-width: 768px) {
+    .products__list-item{
+        font-size: 22px;
+    }
+    .products__item-descr{
+        font-size: 28px !important;
+    }
+}
+
+@media (min-width: 1140px) {
+    .products{
+        display: flex;
+        max-width: 1280px;
+        gap: 30px;
+        margin: 0 auto;
+        padding: 0 15px;
+
+    }
+    .products__item{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .products__item-descr{
+        font-size: 18px !important;
+    }
+    .products__list{
+    }
+    .products__list-item{
+        font-size: 18px;
+        max-width: 407px;
+    }
+    .products .button-blue,
+    .products .button-orange,
+    .products .button-purple{
+        max-width: 295px;
+    }
+}

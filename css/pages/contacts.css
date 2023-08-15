@@ -1,0 +1,85 @@
+.contacts{
+    padding: 0 15px;
+    margin-bottom: 100px;
+}
+.contacts__form{
+    display: flex;
+    flex-direction: column;
+}
+.contacts__input{
+    font-size: 20px;
+    padding: 0 20px 20px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #91C6E8;
+}
+.contacts__input::placeholder{
+    color: #000;
+}
+.contacts__btn{
+    margin-bottom: 70px !important;
+}
+.contacts__dropdown{
+    margin-bottom: 50px;
+}
+.contacts__item{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.contacts__item-facebook{
+    margin-right: 25px;
+    color: #3F3F3F;
+}
+.contacts__item-instagram{
+    color: #3F3F3F;
+}
+.footer__menu-email-link,
+.contacts__item-social-text{
+    opacity: 0.5;
+}
+.contacts__item-mb40{
+    margin-bottom: 40px;
+}
+.contacts__item-social-text{
+    cursor: pointer;
+}
+.contacts__item-social-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contacts__item-social--telegram{
+    color: #23A0DD;
+}
+.contacts__item-social--whatsapp{
+    color: #7AD06D;
+    margin-left: 25px;
+}
+.contacts .button-orange{
+    max-width: 425px;
+}
+.contacts__item-social--telegram span{
+    margin-left: 5px;
+    color: #23A0DD;
+}
+.contacts__item-social--whatsapp span{
+    margin-left: 5px;
+    color: #7AD06D;
+}
+@media (min-width: 1140px) {
+    .contacts{
+        max-width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        gap: 250px;
+    }
+    .contacts__form{
+        width: 50%;
+    }
+    .contacts__item{
+        justify-content: start;
+    }
+    .contacts .button-orange{
+        max-width: 295px;
+    }
+}

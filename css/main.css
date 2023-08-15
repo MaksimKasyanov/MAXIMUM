@@ -1,6 +1,7 @@
 html {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -77,6 +78,7 @@ body{
     font-family: 'Raleway', sans-serif;
     background-color: #F9F9F9;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 p,
@@ -94,8 +96,13 @@ main{
     margin-top: 100px;
 }
 
-section{
-    margin-bottom: 100px !important;
+li,
+h1,
+h2,
+h3,
+p,
+span{
+    cursor: default;
 }
 
 h2 {
@@ -109,11 +116,10 @@ h3{
 }
 
 @media (min-width: 768px) {
-    section{
-        margin-bottom: 100px;
-    }
+
     h2{
         font-size: 60px;
+        padding-top: 100px;
     }
     h3{
         font-size: 38px;
