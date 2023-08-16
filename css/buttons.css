@@ -91,3 +91,14 @@
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
+
+.popup .button-orange{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+}
+
+.popup h2{
+    padding-top: 60px !important;
+    line-height: 70px;
+}

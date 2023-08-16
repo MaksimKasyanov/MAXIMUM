@@ -2,6 +2,7 @@ html {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 *,
@@ -78,7 +79,6 @@ body{
     font-family: 'Raleway', sans-serif;
     background-color: #F9F9F9;
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 p,
